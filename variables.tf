@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "us-west-2"
+  default = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -13,13 +13,14 @@ variable "subnets_cidr" {
 
 variable "azs" {
   type = list
-  default = ["us-west-2a", "us-west-2b"]
+  default = ["us-east-1a", "us-east-1b"]
 }
 
 variable "webservers_ami" {
-  default = "ami-098e42ae54c764c35"
+  default = "ami-0332d564d76dbd8d6"
 }
 
 variable "instance_type" {
-  default = "t2.nano"
+  default = "t3.micro"
 }
+
